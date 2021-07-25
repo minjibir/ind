@@ -1,0 +1,143 @@
+@relation '400L-100L DATA'
+
+@attribute GENDER {Male,Female}
+@attribute 'AGE  ' {ADULT,'SENIOR ADULT'}
+@attribute 'MOTHER ALIVE' {Yes,No}
+@attribute 'MOTHER QUALIFICATION' {Secondary,Bachelor,NCE/Diploma/HND,Masters}
+@attribute 'FATHER ALIVE' {Yes,No}
+@attribute 'FATHER QUALIFICATION ' {NCE/Diploma/HND,Bachelor,Masters,PhD,Secondary}
+@attribute 'MOTHER WORKING' {No,Yes}
+@attribute 'FATHER WORKING' {No,Yes}
+@attribute 'PARENTS TOGETHER' {No,Yes}
+@attribute SPONSOR {father,Mother,Parents}
+@attribute 'MARITAL STATUS' {Single}
+@attribute PROXIMITY {Far,Near,'Very far'}
+@attribute 'MOTHER INCOME' {Low,average,high}
+@attribute 'FATHER INCOME' {Low,average,high}
+@attribute 'SOCIAL MEDIA USE' {LITTLE,'VERY LITTLE',MUCH}
+@attribute 'EXTRACURRICULAR ' {No,Yes}
+@attribute 'SMOKING HABIT' {No}
+@attribute 'BIO 101' {D,B,A,C}
+@attribute 'CHM 101' {A,D,B,C,F,ABS}
+@attribute 'CHM 103' {B,D,A,C,ABS}
+@attribute 'CS 101' {D,A,B,C,F}
+@attribute 'CS 102' {B,C,A,D,F}
+@attribute 'GST 101' {D,B,C,A,F}
+@attribute 'GST 102' {D,C,B,A,F}
+@attribute 'GST 103' {D,C,B,A,F}
+@attribute 'GST 104' {C,B,D,A,ABS}
+@attribute ' MTH 101' {D,C,B,F,A}
+@attribute 'MTH 102' {F,D,B,C,A}
+@attribute 'MTH 103' {D,E,F,B,C,A,ABS}
+@attribute 'PHY 102' {F,D,B,C,A,ABS}
+@attribute 'STA 203' {A,D,F,B,C,ABS}
+@attribute GRADE {FAIL,FAIR,GOOD,FAIIR}
+
+@data
+
+Male,ADULT,Yes,Secondary,Yes,NCE/Diploma/HND,No,No,No,father,Single,Far,Low,Low,LITTLE,No,No,D,A,B,D,B,D,D,D,C,D,F,D,F,A,FAIL
+Male,ADULT,Yes,Secondary,Yes,NCE/Diploma/HND,Yes,Yes,Yes,father,Single,Far,Low,average,LITTLE,Yes,No,B,D,D,A,C,?,D,C,B,C,D,E,F,D,FAIR
+Male,ADULT,Yes,Bachelor,Yes,Bachelor,No,Yes,Yes,father,Single,Near,average,average,'VERY LITTLE',Yes,No,B,B,D,B,B,B,C,C,D,B,B,D,D,D,GOOD
+Male,ADULT,Yes,Bachelor,Yes,Masters,Yes,Yes,Yes,father,?,Near,average,average,LITTLE,Yes,No,A,C,B,A,A,B,B,B,A,C,B,D,D,D,GOOD
+Female,ADULT,Yes,Bachelor,No,Bachelor,Yes,Yes,No,Mother,Single,Near,average,average,'VERY LITTLE',Yes,No,B,D,A,A,C,C,B,D,B,B,C,F,F,F,FAIR
+Female,ADULT,Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,Yes,father,Single,Far,Low,average,LITTLE,Yes,No,C,C,B,A,A,C,B,D,C,D,D,D,D,D,FAIR
+Female,ADULT,No,Secondary,Yes,Bachelor,No,Yes,No,father,Single,Far,Low,average,MUCH,No,No,B,D,C,B,C,C,C,A,D,F,D,F,F,F,FAIR
+Male,'SENIOR ADULT',Yes,Bachelor,Yes,NCE/Diploma/HND,Yes,Yes,Yes,Parents,Single,Far,average,average,LITTLE,Yes,No,C,C,B,C,A,C,C,D,B,C,D,D,F,F,FAIR
+Male,ADULT,Yes,Bachelor,Yes,PhD,Yes,Yes,Yes,father,Single,Near,average,high,'VERY LITTLE',Yes,No,A,A,A,C,A,A,B,A,A,A,A,B,B,B,GOOD
+Male,'SENIOR ADULT',Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Near,average,average,LITTLE,No,No,C,F,C,D,C,B,C,C,D,C,F,D,D,D,FAIR
+Male,ADULT,No,Secondary,Yes,Bachelor,No,Yes,No,father,Single,Near,Low,average,LITTLE,No,No,B,D,B,B,B,C,B,D,A,C,F,D,F,F,FAIR
+Male,'SENIOR ADULT',Yes,Masters,No,Bachelor,Yes,Yes,No,Mother,Single,Near,average,average,'VERY LITTLE',Yes,No,B,B,C,A,A,A,A,B,A,B,C,C,B,D,GOOD
+Male,'SENIOR ADULT',Yes,Secondary,Yes,NCE/Diploma/HND,Yes,Yes,Yes,father,Single,Far,Low,average,MUCH,Yes,No,C,C,D,B,C,B,C,D,D,B,D,F,D,F,FAIR
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Masters,Yes,Yes,Yes,father,Single,Near,average,high,'VERY LITTLE',Yes,No,A,B,B,B,A,A,C,B,A,C,C,C,D,B,GOOD
+Male,ADULT,?,NCE/Diploma/HND,Yes,NCE/Diploma/HND,Yes,Yes,Yes,father,Single,Far,average,average,LITTLE,No,No,C,D,B,A,C,C,C,C,B,C,F,D,D,D,FAIR
+Male,'SENIOR ADULT',Yes,Secondary,Yes,Bachelor,No,Yes,Yes,father,Single,Near,Low,high,LITTLE,No,No,C,D,C,F,C,D,F,C,C,D,F,D,F,F,FAIL
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Masters,Yes,Yes,Yes,father,Single,Near,average,average,LITTLE,Yes,No,C,B,A,B,D,C,D,D,D,C,B,B,D,D,GOOD
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Far,average,average,LITTLE,Yes,No,B,B,C,B,A,C,B,C,B,C,F,D,D,D,GOOD
+Male,'SENIOR ADULT',Yes,Secondary,No,Bachelor,No,Yes,No,Mother,Single,Near,average,average,LITTLE,Yes,No,C,C,B,B,A,C,B,B,A,C,D,D,D,B,GOOD
+Male,'SENIOR ADULT',Yes,Secondary,Yes,NCE/Diploma/HND,Yes,Yes,Yes,father,Single,Far,Low,average,LITTLE,No,No,C,C,B,A,A,B,C,C,A,C,D,D,F,F,FAIR
+Male,'SENIOR ADULT',No,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,No,father,Single,Far,average,average,LITTLE,Yes,No,B,C,C,A,C,C,C,B,D,D,D,D,F,F,FAIR
+Female,ADULT,Yes,Bachelor,No,NCE/Diploma/HND,Yes,Yes,No,Mother,Single,Far,average,average,LITTLE,No,No,B,D,C,A,B,D,C,C,B,C,F,D,F,F,FAIR
+Female,'SENIOR ADULT',Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,father,Single,Far,average,average,LITTLE,Yes,No,C,A,A,A,C,C,C,B,B,B,B,B,C,D,GOOD
+Female,'SENIOR ADULT',Yes,Secondary,Yes,NCE/Diploma/HND,No,Yes,No,father,Single,Far,Low,average,MUCH,No,No,D,C,B,A,B,B,B,D,B,D,D,D,F,D,FAIR
+Male,ADULT,Yes,NCE/Diploma/HND,No,Secondary,Yes,No,No,Mother,Single,'Very far',Low,average,LITTLE,Yes,No,B,D,C,D,C,C,B,B,D,D,D,D,F,D,FAIR
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Near,average,average,LITTLE,Yes,No,D,C,B,C,A,C,C,C,C,C,C,D,C,D,FAIR
+Male,'SENIOR ADULT',Yes,Bachelor,Yes,Masters,Yes,Yes,Yes,Parents,Single,Near,high,high,'VERY LITTLE',Yes,No,A,A,A,A,A,A,B,A,A,A,A,A,A,C,GOOD
+Male,ADULT,Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,father,Single,Far,average,average,LITTLE,Yes,No,B,A,B,B,A,C,C,?,B,B,F,D,D,ABS,FAIR
+Female,'SENIOR ADULT',No,Secondary,Yes,Bachelor,No,Yes,No,father,Single,Far,Low,average,LITTLE,No,No,B,D,C,C,F,B,D,D,D,D,D,D,D,F,FAIR
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,'Very far',average,average,MUCH,No,No,C,C,B,B,D,D,C,A,D,D,D,D,F,D,FAIR
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,Yes,father,Single,Far,average,average,'VERY LITTLE',Yes,No,C,D,B,C,A,B,C,C,A,C,B,D,D,D,GOOD
+Female,'SENIOR ADULT',Yes,Masters,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Near,average,average,'VERY LITTLE',Yes,No,A,A,A,B,A,C,A,C,B,B,C,C,C,D,GOOD
+Female,ADULT,Yes,NCE/Diploma/HND,No,Secondary,Yes,No,No,Mother,Single,Far,Low,Low,MUCH,No,No,B,F,C,B,A,D,B,D,C,C,F,D,D,F,FAIR
+Male,ADULT,No,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,No,father,Single,Far,average,average,LITTLE,Yes,No,B,B,B,B,B,B,A,C,B,B,C,C,D,D,GOOD
+Male,'SENIOR ADULT',Yes,Secondary,Yes,Bachelor,No,Yes,Yes,father,Single,Far,Low,high,MUCH,No,No,C,F,D,C,C,B,D,C,C,F,F,D,F,F,FAIL
+Male,'SENIOR ADULT',Yes,Secondary,No,NCE/Diploma/HND,Yes,Yes,No,Mother,Single,'Very far',Low,average,LITTLE,No,No,C,D,B,B,F,D,B,F,D,D,D,D,D,F,FAIL
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,No,father,Single,Far,average,average,LITTLE,Yes,No,C,D,ABS,A,A,C,C,A,C,D,D,D,F,F,FAIR
+Male,ADULT,Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,father,Single,Near,average,average,LITTLE,No,No,B,C,C,B,A,B,C,B,A,B,D,B,D,B,GOOD
+Female,ADULT,No,NCE/Diploma/HND,Yes,NCE/Diploma/HND,Yes,Yes,No,father,Single,'Very far',average,average,'VERY LITTLE',Yes,No,C,C,A,B,C,D,D,C,B,D,F,D,ABS,F,FAIR
+Male,'SENIOR ADULT',Yes,Secondary,Yes,NCE/Diploma/HND,No,Yes,Yes,father,Single,Near,Low,average,LITTLE,No,No,C,D,C,F,C,D,F,C,C,D,F,D,F,F,FAIL
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,Yes,father,Single,Near,Low,average,'VERY LITTLE',Yes,No,?,B,A,B,D,C,D,D,B,C,B,B,D,D,GOOD
+Male,ADULT,Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,Yes,father,Single,Near,average,average,LITTLE,Yes,No,B,B,C,B,A,C,B,C,B,C,F,D,D,D,GOOD
+Male,'SENIOR ADULT',Yes,Bachelor,Yes,Masters,Yes,Yes,Yes,Parents,Single,Far,average,average,LITTLE,No,No,C,C,B,B,A,C,B,C,A,C,D,D,D,B,GOOD
+Male,ADULT,No,NCE/Diploma/HND,Yes,NCE/Diploma/HND,Yes,Yes,No,father,Single,Far,average,average,'VERY LITTLE',Yes,No,C,C,B,A,A,B,C,C,A,C,D,D,F,F,FAIR
+Male,'SENIOR ADULT',Yes,Bachelor,No,NCE/Diploma/HND,Yes,Yes,No,Mother,Single,Far,average,average,LITTLE,Yes,No,B,C,C,B,C,C,C,C,B,D,D,D,D,F,FAIR
+Female,'SENIOR ADULT',Yes,Secondary,Yes,Secondary,No,No,Yes,father,Single,Far,Low,average,MUCH,No,No,B,D,C,A,B,D,C,C,B,C,F,D,F,F,FAIR
+Female,ADULT,Yes,Masters,No,NCE/Diploma/HND,Yes,Yes,No,Mother,Single,Near,average,average,'VERY LITTLE',Yes,No,C,A,A,A,C,C,C,B,B,B,B,B,C,D,GOOD
+Female,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,NCE/Diploma/HND,Yes,Yes,No,father,Single,'Very far',average,average,LITTLE,No,No,D,C,B,A,B,B,B,D,B,D,D,D,F,D,FAIR
+Male,ADULT,Yes,NCE/Diploma/HND,Yes,Secondary,Yes,No,Yes,Mother,Single,Far,average,Low,MUCH,Yes,?,B,D,C,D,C,C,B,B,B,B,D,D,F,D,FAIR
+Male,'SENIOR ADULT',No,Secondary,Yes,Secondary,No,No,No,father,Single,Far,Low,average,MUCH,No,No,D,C,B,C,A,C,C,C,C,C,D,C,D,C,GOOD
+Male,'SENIOR ADULT',Yes,Bachelor,Yes,Masters,Yes,Yes,Yes,Parents,Single,Near,average,high,'VERY LITTLE',Yes,No,A,A,A,A,A,A,B,A,A,A,A,A,A,C,GOOD
+Male,ADULT,Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Near,average,average,LITTLE,Yes,No,B,A,B,B,A,C,C,B,B,B,F,D,D,ABS,GOOD
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,NCE/Diploma/HND,Yes,Yes,Yes,Parents,Single,Far,average,average,LITTLE,Yes,No,B,D,C,C,F,B,D,D,D,D,D,D,D,F,FAIR
+Male,'SENIOR ADULT',Yes,Secondary,Yes,Secondary,?,No,No,father,Single,Near,Low,average,MUCH,No,No,C,D,C,F,C,D,F,C,C,D,F,D,F,F,FAIL
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,Yes,father,Single,Near,average,average,LITTLE,Yes,No,C,B,A,B,D,C,D,D,B,C,B,B,D,D,GOOD
+Male,'SENIOR ADULT',Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Near,average,average,LITTLE,Yes,No,B,B,C,B,A,C,B,C,B,C,F,D,D,D,GOOD
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Masters,Yes,Yes,Yes,father,Single,Near,average,high,'VERY LITTLE',Yes,No,C,C,B,B,A,C,B,C,A,C,D,D,D,B,GOOD
+Female,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,Yes,father,Single,Far,average,average,LITTLE,Yes,No,C,A,A,A,C,C,C,B,B,B,B,B,C,D,GOOD
+Male,'SENIOR ADULT',No,Secondary,Yes,NCE/Diploma/HND,No,Yes,No,father,Single,Near,Low,average,LITTLE,Yes,No,D,C,B,C,A,C,C,C,C,C,D,C,D,C,GOOD
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,NCE/Diploma/HND,Yes,Yes,Yes,father,Single,Far,average,average,LITTLE,Yes,No,C,A,B,B,B,B,C,C,B,B,D,B,D,D,GOOD
+Male,ADULT,Yes,Secondary,No,NCE/Diploma/HND,No,Yes,No,Mother,Single,Far,Low,average,LITTLE,No,No,?,?,?,?,?,?,?,?,?,?,?,?,?,?,FAIR
+Female,'SENIOR ADULT',Yes,Secondary,Yes,Secondary,No,No,Yes,Parents,Single,Far,Low,Low,LITTLE,No,No,C,F,C,D,C,C,D,D,ABS,F,F,D,F,F,FAIL
+Female,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Far,average,average,LITTLE,Yes,No,B,C,C,A,A,A,D,D,A,C,F,D,F,B,GOOD
+Male,'SENIOR ADULT',Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Near,average,average,LITTLE,Yes,No,B,C,A,A,A,C,A,D,B,C,C,C,D,C,GOOD
+Female,ADULT,Yes,NCE/Diploma/HND,Yes,NCE/Diploma/HND,Yes,Yes,No,father,Single,Near,average,average,MUCH,No,No,C,D,B,D,D,C,D,D,B,D,F,ABS,F,F,FAIR
+Male,'SENIOR ADULT',Yes,Bachelor,No,NCE/Diploma/HND,Yes,Yes,No,Mother,Single,Far,average,average,LITTLE,Yes,No,C,D,B,A,D,C,D,C,A,D,F,D,F,F,FAIR
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Secondary,Yes,No,Yes,father,Single,Far,average,average,MUCH,No,No,B,B,B,A,C,C,A,B,B,B,F,C,F,F,FAIR
+Female,'SENIOR ADULT',Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Near,average,average,'VERY LITTLE',Yes,No,B,A,A,B,A,B,A,B,A,B,C,D,C,B,GOOD
+Female,'SENIOR ADULT',Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Near,average,average,'VERY LITTLE',Yes,No,B,A,A,B,A,B,A,B,A,B,C,D,C,C,GOOD
+Male,'SENIOR ADULT',Yes,Bachelor,Yes,PhD,Yes,Yes,Yes,Parents,Single,Near,average,high,'VERY LITTLE',Yes,No,A,A,A,A,A,A,A,A,A,A,A,A,A,B,GOOD
+Male,'SENIOR ADULT',No,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,No,father,Single,Far,average,average,LITTLE,Yes,No,B,A,B,B,B,C,A,B,A,D,C,D,D,D,GOOD
+Male,ADULT,Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Near,average,average,LITTLE,Yes,No,B,B,A,A,A,C,A,C,A,B,D,D,C,C,GOOD
+Male,'SENIOR ADULT',Yes,Secondary,Yes,Bachelor,Yes,Yes,Yes,father,Single,Near,Low,average,LITTLE,No,No,C,A,D,A,B,D,C,D,B,B,A,A,C,C,GOOD
+Male,ADULT,Yes,Secondary,Yes,NCE/Diploma/HND,No,Yes,Yes,father,Single,Near,Low,average,LITTLE,No,No,B,D,B,B,C,B,C,D,B,C,C,C,D,F,FAIR
+Female,'SENIOR ADULT',Yes,Bachelor,Yes,NCE/Diploma/HND,Yes,Yes,Yes,Parents,Single,Near,average,average,'VERY LITTLE',Yes,No,?,?,?,?,?,?,?,?,?,?,?,?,?,?,GOOD
+Female,'SENIOR ADULT',Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Far,average,average,LITTLE,Yes,No,B,A,A,B,C,A,A,B,A,C,D,C,D,D,GOOD
+Male,ADULT,No,Secondary,Yes,Bachelor,No,Yes,No,father,Single,Far,average,average,LITTLE,Yes,No,B,C,D,A,C,C,C,C,A,C,F,F,F,F,FAIR
+Female,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Secondary,Yes,No,No,Mother,Single,Far,average,Low,LITTLE,Yes,No,C,F,C,B,A,C,C,C,A,C,D,D,F,F,FAIR
+Female,'SENIOR ADULT',No,Secondary,Yes,Secondary,No,No,No,father,Single,Far,Low,average,MUCH,No,No,C,D,C,C,C,B,D,C,B,D,F,D,ABS,F,FAIIR
+Female,ADULT,Yes,Bachelor,Yes,NCE/Diploma/HND,Yes,Yes,Yes,Parents,Single,Near,average,average,MUCH,No,No,B,C,D,A,A,C,D,F,B,C,D,ABS,F,F,FAIR
+Male,'SENIOR ADULT',Yes,Masters,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Far,average,average,LITTLE,No,No,B,A,B,A,A,C,A,B,A,C,C,D,F,A,GOOD
+Female,'SENIOR ADULT',Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Near,average,average,LITTLE,Yes,No,A,A,A,A,B,D,B,C,A,D,D,C,D,D,GOOD
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,No,Secondary,Yes,No,No,Mother,Single,Far,average,Low,LITTLE,Yes,No,B,C,C,A,A,D,B,C,B,D,F,D,F,F,FAIR
+Male,'SENIOR ADULT',Yes,Secondary,Yes,NCE/Diploma/HND,No,Yes,Yes,father,Single,Far,Low,average,LITTLE,No,No,B,D,B,B,C,D,C,B,B,C,F,D,F,F,FAIR
+Male,ADULT,Yes,Secondary,Yes,NCE/Diploma/HND,Yes,Yes,Yes,father,Single,Near,Low,average,LITTLE,Yes,No,B,C,D,B,C,F,D,D,A,B,D,C,F,F,FAIR
+Male,ADULT,Yes,Secondary,Yes,Secondary,No,No,Yes,Parents,Single,'Very far',Low,Low,MUCH,No,No,C,ABS,ABS,C,F,C,D,D,B,C,F,D,F,F,FAIL
+Male,ADULT,No,Secondary,Yes,NCE/Diploma/HND,No,Yes,No,father,Single,Far,Low,Low,LITTLE,No,No,A,D,A,C,C,F,F,D,C,D,F,C,F,F,FAIL
+Female,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,NCE/Diploma/HND,Yes,Yes,Yes,Parents,Single,Far,average,average,LITTLE,Yes,No,A,B,C,B,B,A,D,C,A,B,C,D,D,ABS,GOOD
+Male,'SENIOR ADULT',Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Near,average,average,LITTLE,Yes,No,B,C,C,B,A,B,B,B,A,C,D,D,F,D,GOOD
+Female,ADULT,Yes,Bachelor,No,NCE/Diploma/HND,Yes,Yes,No,Mother,Single,Near,average,average,'VERY LITTLE',Yes,No,A,A,B,A,A,B,C,B,B,D,B,F,D,F,GOOD
+Female,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Far,average,average,LITTLE,Yes,No,C,D,A,B,C,C,C,D,B,D,D,D,F,F,FAIR
+Female,'SENIOR ADULT',No,Secondary,Yes,Secondary,Yes,Yes,Yes,Parents,Single,Far,Low,average,MUCH,No,No,C,C,B,C,D,D,C,D,B,C,D,D,F,F,FAIR
+Female,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,NCE/Diploma/HND,Yes,Yes,Yes,Parents,Single,Far,Low,average,MUCH,No,No,C,D,B,B,B,C,C,C,B,C,D,D,D,D,FAIR
+Male,'SENIOR ADULT',No,Secondary,Yes,NCE/Diploma/HND,No,Yes,No,father,Single,Far,Low,Low,LITTLE,No,No,B,D,C,F,D,F,D,D,D,D,D,D,F,D,FAIL
+?,'SENIOR ADULT',Yes,Secondary,Yes,NCE/Diploma/HND,Yes,Yes,Yes,Parents,Single,Far,average,average,'VERY LITTLE',Yes,?,A,C,A,A,A,A,B,B,A,B,D,A,D,A,GOOD
+Female,'SENIOR ADULT',Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Near,average,average,LITTLE,Yes,No,B,B,A,A,A,C,A,D,A,C,B,D,C,D,GOOD
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Far,average,average,LITTLE,Yes,No,B,B,A,A,B,D,C,D,A,B,B,C,D,A,GOOD
+Male,'SENIOR ADULT',Yes,NCE/Diploma/HND,Yes,Secondary,Yes,No,Yes,father,Single,Near,average,average,LITTLE,Yes,No,B,C,A,A,A,C,C,D,A,C,D,D,D,D,GOOD
+Male,ADULT,Yes,Bachelor,No,NCE/Diploma/HND,Yes,Yes,No,Mother,Single,Near,average,Low,LITTLE,Yes,No,C,D,C,D,B,C,D,C,B,C,F,D,D,D,FAIR
+Female,'SENIOR ADULT',Yes,Secondary,Yes,Bachelor,No,Yes,No,father,Single,Far,?,average,LITTLE,No,No,B,D,C,B,A,D,D,D,C,D,F,ABS,F,F,FAIL
+Male,ADULT,Yes,Secondary,Yes,NCE/Diploma/HND,No,Yes,Yes,father,Single,Near,average,average,'VERY LITTLE',Yes,No,A,B,A,C,A,B,C,D,A,B,D,C,C,C,GOOD
+Male,'SENIOR ADULT',Yes,Bachelor,Yes,Masters,Yes,Yes,Yes,Parents,Single,Near,high,high,'VERY LITTLE',Yes,No,A,A,A,A,A,?,A,A,B,B,A,A,C,A,GOOD
+Male,'SENIOR ADULT',Yes,Masters,Yes,PhD,Yes,Yes,Yes,father,Single,Near,high,high,'VERY LITTLE',Yes,No,A,C,B,B,B,A,C,B,A,B,B,B,D,C,GOOD
+Male,ADULT,Yes,NCE/Diploma/HND,Yes,Secondary,Yes,No,Yes,Parents,Single,Far,average,average,MUCH,Yes,No,B,D,B,B,B,B,D,C,C,D,C,D,F,F,FAIR
+Male,'SENIOR ADULT',Yes,Bachelor,Yes,Bachelor,Yes,Yes,Yes,Parents,Single,Far,average,average,MUCH,No,No,D,D,A,C,C,D,F,C,B,D,C,D,F,F,FAIL
+Female,'SENIOR ADULT',No,Secondary,Yes,NCE/Diploma/HND,No,Yes,No,father,Single,Far,Low,Low,MUCH,No,No,C,D,B,B,D,F,D,C,D,F,D,D,F,F,FAIL
